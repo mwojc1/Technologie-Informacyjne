@@ -1,0 +1,52 @@
+:root {
+  --box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+}
+
+
+body {
+    margin: 0px;
+  }
+  .side-menu-container,
+  .side-menu,
+  .side-menu > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+  }
+  .side-menu-container {
+    position: fixed;
+    height: 100vh;
+    left: 0px;
+    z-index: 1000;
+    top: 0px;
+  }
+  .side-menu > a {
+    margin: 5px 0px;
+    height: 40px;
+    background-color: white;
+  }
+  .side-menu > a:hover {
+    margin: 5px 0px;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+  }
+  a:active{
+    background-color: rgb(42, 136, 37);
+  }
+  a:hover{
+    background-color: #55B4D4;
+  }
+  a:visited{
+    
+    background-color: aquamarine;
+    color:grey;
+  }
+  a:focus{
+    background-color: #055697;
+    
+  }
+
+  .toSec1, .toSec2, .toSec3, .toSec4 { box-shadow: var(--box-shadow); }

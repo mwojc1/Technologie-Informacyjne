@@ -1,0 +1,160 @@
+
+:root{
+--lightest-blue: #B4F5EE;
+--sorta_greenish_blueish : #27D3D6;
+--nice_blue: #6AD9EB;
+--darkest_blue: #55B4D4;
+--sky_blue: #A2DAFA;
+}
+
+body{
+    background-color: #27D3D6;
+    font-family: 'Oxygen';
+    font-size: medium;
+    color:rgb(29, 30, 32);
+    text-align: justify;
+}
+
+.container{
+    width: 70%;
+    margin: 0% 10% 0% 10%;
+    padding: 2.5% 5% 2.5% 5%;
+    min-height: 30vh; /*generates issues*/
+
+}
+
+
+.image{
+    max-width: 350px;
+}
+.polaroid_pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 1% 0%;
+    width: 400px;
+    height: 450px;
+    font-size: 5px;
+    box-shadow: 0px 0px 20px rgb(29, 30, 32);
+}
+#lists{
+    display: flex;
+    justify-content: center;
+}
+.list{
+    display: flex;
+    align-items: center;
+    margin: 3% ;
+    width: 45%;
+    background-color: var(--darkest_blue);
+}
+#divtable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkest_blue);
+    padding: 8%;
+}
+#tab1{
+    border-collapse: collapse;
+    border: 0.5px dotted black;
+}
+
+#tab1 td, #tab1 th{
+    padding: 0%;
+    border: 0.5px dotted black;
+    border-collapse: collapse;
+
+}
+td,th{
+    margin: 1px;;
+}
+
+#footer{
+    text-align: center;
+    background-color: var(--darkest_blue) ;
+    padding: 10px;
+}
+#header{
+    background-color: var(--darkest_blue) ;
+    padding: 5px;
+   
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    background-color: var(--darkest_blue);
+}
+a:visited{
+    background-color: #055697;
+    color:grey;
+}
+a:focus{
+    background-color: aquamarine;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    width: 80%;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#zegar {
+    align-self: center;
+    width: 300px;
+    height: 50px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    animation: colors 5s infinite;
+  }
+  @keyframes colors {
+    0% {
+      color: red;
+    }
+    19% {
+      color: red;
+    }
+    20% {
+      color: rgb(255, 255, 0);
+    }
+    39% {
+      color: rgb(255, 255, 0);
+    }
+    40% {
+      color: rgb(50, 255, 0);
+    }
+    59% {
+      color: rgb(50, 255, 0);
+    }
+    60% {
+      color: rgb(0, 89, 255);
+    }
+    79% {
+      color: rgb(0, 89, 255);
+    }
+    80% {
+      color: rgb(255, 255, 255);
+    }
+    99% {
+      color: rgb(255, 255, 255);
+    }
+    100% {
+      color: red;
+    }
+  }

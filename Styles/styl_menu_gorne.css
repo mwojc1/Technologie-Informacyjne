@@ -1,0 +1,85 @@
+
+
+/* MAIN HEADER */
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    z-index: 1000;
+  }
+
+nav{
+    margin: 0% 3%;
+    display:flex;
+    justify-content: flex-end;
+   }
+
+
+.nav-top{
+    background-color: white;
+    color:grey;
+    text-decoration: none;
+    border-radius: 35%;
+    padding:10px;
+    margin: 5px;
+  }
+  
+.Logo{
+    vertical-align: middle;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0% 2%;
+  }
+
+.fa-solid{font-size: 0px;}
+      
+
+/* rotation works on big logo visibility works on small logo*/
+@media only screen and (max-width: 850px) {
+    .fa-house{font-size: 0px;}
+    #logo::first-letter {font-size: 16px;}
+    #logo{
+        font-size: 0px;
+        visibility: hidden;
+        opacity:0;
+        transition: visibility 1s, opacity 3s ;
+      }       
+    }
+
+@media only screen and (max-width:600px) {
+    .nav-top{
+        display: flex;
+        justify-content: center;
+        min-width: 25%;
+        padding: 10px 3px;
+        margin: 5px;
+        font-size:0px;
+    }
+    .fa-solid{
+      font-size: 16px;
+    }
+    
+
+}
+
+a:active{
+  background-color: rgb(42, 136, 37);
+}
+a:hover{
+  background-color: #55B4D4;
+}
+a:visited{
+  
+  background-color: aquamarine;
+  color:grey;
+}
+a:focus{
+  background-color: #055697;
+  
+}
